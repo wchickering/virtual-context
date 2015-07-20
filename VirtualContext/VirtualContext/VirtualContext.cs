@@ -25,22 +25,22 @@ using Schrodinger.L2SHelper;
 namespace Schrodinger.VirtualContext
 {
     /// <summary>
-    /// The Dynamic Data Context, or DDC, provides powerful querying/entity retrieval along with "detached" change tracking.
+    /// The Virtual Context, or VC, provides powerful querying/entity retrieval along with "detached" change tracking.
     /// 
-    /// The DDC works with Linq to Sql to provide a complete data access layer.
+    /// The VC works with Linq to Sql to provide a complete data access layer.
     /// 
-    /// The DDC simplifies retrieval along with creation, updating, and destruction of complete object graphs.
+    /// The VC simplifies retrieval along with creation, updating, and destruction of complete object graphs.
     /// 
-    /// The DDC is not a framework, and can live side by side with other data access solutions.
+    /// The VC is not a framework, and can live side by side with other data access solutions.
     /// 
-    /// The DDC integrates well with both ASP.NET Web Forms and MVC.
+    /// The VC integrates well with both ASP.NET Web Forms and MVC.
     /// 
-    /// The DDC uses method chaining to provide a fully fluent interface for L2S entity retrieval and querying.
+    /// The VC uses method chaining to provide a fully fluent interface for L2S entity retrieval and querying.
     /// 
-    /// The DDC's Object Relational Mapping Utility, or ORMUtility, exposes a rich collection of methods for manipulating
+    /// The VC's Object Relational Mapping Utility, or ORMUtility, exposes a rich collection of methods for manipulating
     /// object graphs. This includes comparisons, duplication, serialization, working with or without an entity's children and
     /// parent objects. Moreover, using the ORMUtility to manipulate an application's entities offers the added benefit of
-    /// provides the application developer indiaccess to the DDC's optimized 
+    /// provides the application developer indiaccess to the VC's optimized 
     /// 
     /// Written by Bill Chickering.
     /// </summary>
