@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5239D0FF-4BB1-4DF0-9EAF-7CF9CB562F85}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ConsoleTestApp</RootNamespace>
+    <AssemblyName>ConsoleTestApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AdventureWorksLT\AdventureWorksLT.csproj">
+      <Project>{CF4A0948-305F-4D4D-9FE1-26E44E7CB185}</Project>
+      <Name>AdventureWorksLT</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityFactory\Schrodinger.EntityFactory.csproj">
+      <Project>{EA288E21-4DEE-4F96-A9D0-3CBE40DA2C0D}</Project>
+      <Name>Schrodinger.EntityFactory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EntityTracker\Schrodinger.EntityTracker.csproj">
+      <Project>{D627FA57-CA79-4282-8AB9-82F51FD17ACE}</Project>
+      <Name>Schrodinger.EntityTracker</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\L2SHelper\Schrodinger.L2SHelper.csproj">
+      <Project>{AB011B02-468B-4AE9-B492-F9CF62AF9EEA}</Project>
+      <Name>Schrodinger.L2SHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VirtualContext\Schrodinger.VirtualContext.csproj">
+      <Project>{0FF1DA24-DE26-47C3-B716-E51C2A38B7E3}</Project>
+      <Name>Schrodinger.VirtualContext</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
