@@ -25,23 +25,21 @@ using Schrodinger.L2SHelper;
 namespace Schrodinger.VirtualContext
 {
     /// <summary>
-    /// The Virtual Context, or VC, provides powerful querying/entity retrieval along with "detached" change tracking.
-    /// 
-    /// The VC works with Linq to Sql to provide a complete data access layer.
-    /// 
-    /// The VC simplifies retrieval along with creation, updating, and destruction of complete object graphs.
-    /// 
-    /// The VC is not a framework, and can live side by side with other data access solutions.
-    /// 
-    /// The VC integrates well with both ASP.NET Web Forms and MVC.
-    /// 
-    /// The VC uses method chaining to provide a fully fluent interface for L2S entity retrieval and querying.
-    /// 
-    /// The VC's Object Relational Mapping Utility, or ORMUtility, exposes a rich collection of methods for manipulating
-    /// object graphs. This includes comparisons, duplication, serialization, working with or without an entity's children and
-    /// parent objects. Moreover, using the ORMUtility to manipulate an application's entities offers the added benefit of
-    /// provides the application developer indiaccess to the VC's optimized 
-    /// 
+    /// The Virtual Context (VC) provides powerful querying/entity retrieval along with
+    /// "detached" change tracking. Works with LINQ to SQL (L2S) to provide a complete
+    /// dynamic data access layer. Simplifies retrieval along with creation, updating,
+    /// and destruction of complete object graphs. The VC is not a framework, and can
+    /// live side by side with other data access solutions. Designed to integrate with
+    /// both ASP.NET Web Forms and MVC.
+    ///
+    /// The VC ses method chaining to provide a fully fluent interface for L2S entity
+    /// retrieval and querying. The Object Relational Mapping Utility, or ORMUtility,
+    /// exposes a rich collection of methods for manipulating object graphs. This
+    /// includes comparisons, duplication, serialization, working with or without an
+    /// entity's children and parent objects. Moreover, using the ORMUtility to
+    /// manipulate an application's entities offers the added benefit of providing the
+    /// application developer indirect access to the VC's optimized methods.
+    ///
     /// Written by Bill Chickering.
     /// </summary>
     /// <typeparam name="TDataContext"></typeparam>
