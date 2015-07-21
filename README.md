@@ -79,9 +79,9 @@ Customer customer = vc.Get<Customer>()
    
 Notice the call to the `Detach()` method. This indicates that we do not want to
 track this object graph. Next, we send the data off to the client by whatever
-means we like. The data is altered in some way by the client in some way and the
-logic within the presentation layer reconstructs the now modified object graph.
-The only real requirement here is that the root object-—the Customer—retains its
+means we like. The data is altered by the client in some way and the logic
+within the presentation layer reconstructs the now modified object graph.  The
+only real requirement here is that the root object-—the Customer—retains its
 original primary key. Once the modified object graph has been sent back to the
 business logic layer, we could write something like:
 
